@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 550 300" style="enable-background:new 0 0 550 300;" xml:space="preserve">
+	<defs>
+		<filter id="my-filter" x="0" y="0">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+			<!-- <feColorMatrix type="saturate" values="5" /> -->
+			<!-- <feMorphology operator="dilate" radius="10" /> -->
+			<!-- <feColorMatrix type="hueRotate" values="180" /> -->
+		</filter>
+	</defs>
+
+	<defs>
+		<linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="cyan" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="yellow" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
+
+	<defs>
+		<linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="magenta" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="cyan" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
+
+	<defs>
+		<linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="yellow" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="magenta" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
+
+	<!-- Square -->
+	<rect x="30" y="30" width="240" height="240" fill="url(#gradient3)" />
+
+	<!-- Circle -->
+	<circle cx="270" cy="150" r="120" fill="url(#gradient1)" />
+
+	<!-- Triangle -->
+	<polygon points="400,30 270,270 520,270" fill="url(#gradient2)" />
+
+	<!-- Line -->
+	<!-- <line x1="0" y1="150" x2="550" y2="150" stroke="black" stroke-width="1" />  -->
+</svg>

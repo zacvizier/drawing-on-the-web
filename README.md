@@ -1,2 +1,2 @@
-# drawing-on-the-web
+# Drawing on the Web
 Spring 2015
