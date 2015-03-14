@@ -1,0 +1,74 @@
+<!doctype HTML>
+
+<html lang="en">
+
+<head>
+	<title>Assignment 4</title>
+	<style type="text/css">
+	</style>
+	
+</head>
+
+<body>
+
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -100 700 500" style="enable-background:new 0 0 700 500;" xml:space="preserve">
+	<defs>
+		<filter id="my-filter" x="0" y="0">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="15" />
+			<!-- <feColorMatrix type="saturate" values="5" /> -->
+			<!-- <feMorphology operator="dilate" radius="10" /> -->
+			<!-- <feColorMatrix type="hueRotate" values="180" /> -->
+		</filter>
+	</defs>
+
+	<defs>
+		<linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="cyan" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="yellow" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
+
+	<defs>
+		<linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="magenta" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="cyan" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
+
+	<defs>
+		<linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="yellow" stop-opacity="0.8" />
+			<stop offset="100%" stop-color="magenta" stop-opacity="0.8" />
+		</linearGradient>
+	</defs>
+
+	<!-- Square -->
+	
+	<rect x="30" y="30" width="240" height="240" fill="url(#gradient3)">
+	 <animate attributeName="x" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="30" to="120" /> 
+	 <animate attributeName="y" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="30" to="0" /> 
+
+	 <animate attributeName="height" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="240" to="300" /> 
+	 <animate attributeName="width" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="240" to="300" /> 
+	
+	</rect>
+	
+
+	<!-- Circle -->
+	<circle cx="270" cy="150" r="120" fill="url(#gradient1)">
+    </circle>
+
+	<!-- Triangle -->
+	<polygon points="400,30 270,270 520,270" fill="url(#gradient2)">
+	<animate attributeName="points" attributeType="XML" begin="0s" dur="2s" fill="freeze" from="400,30 270,270 520,270" to="270,30 270,270 520,270" /> 
+	<animate attributeName="points" attributeType="XML" begin="2s" dur="1.5s" fill="freeze" from="270,30 270,270 520,270" to="270,30 172,220 520,270" /> 
+	<animate attributeName="points" attributeType="XML" begin="3.5s" dur="1.5s" fill="freeze" from="270,30 172,220 520,270" to="270,30 172,220 368,220" /> 
+
+
+
+	</polygon>
+
+
+</svg>
+</body>
